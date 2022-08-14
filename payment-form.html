@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment_form_L3S</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contract Information</h2>
+        <p> Name: <input type="text" name="name" required> </p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male: <input type="radio" name="gender" id="male" required>
+                <br>
+                Female: <input type="radio" name="gender" id="Female">
+                <br>
+                Others: <input type="radio" name="gender" id="Others">
+            </p>
+        </fieldset>
+        <p>
+            Address: <textarea name="address" id="address" cols="120" rows="4"></textarea>
+        </p>
+        <p>
+            Phone: <input type="number" name="phone" id="phone">
+        </p>
+        <p>
+            Email: <input type="email" name="email" id="email">
+        </p>
+        <p>
+            Postal Code: <input type="number" name="postal" id="postal">
+        </p>
+        <br>
+        <br>
+        <h2>payment Information</h2>
+        <p>Card Type:
+            <select name="card-type" id="card-type">
+                <option value="">--Sellect a Card Type--</option>
+                <option value="debit">Debit </option>
+                <option value="Credit">Credit</option>
+                <option value="Visa">Visa</option>
+                <option value="mastercard">Master Card</option>
+            </select>
+        </p>    
+        <p>
+            Card Number: <input type="number" name="card_number" id="card_number">
+        </p>
+        <p>
+            Pin Number: <input type="number" name="pin_number" id="pin_number">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <input type="submit" value="Pay now">
+        <input type="reset" value="reset">
+
+    </form>
+</body>
+</html>
